@@ -10,7 +10,10 @@ vim.g.mapleader = " "
 vim.g.maplocalleader = " "
 
 -- Normal --
--- Clipboard
+-- Stop search highlighting
+map("n", "<Esc>", "<cmd>noh<CR>", opts)
+
+-- System clipboard
 map("n", "<leader>p", "\"+p", opts)
 map("n", "<leader>P", "\"+P", opts)
 map("n", "<leader>y", "\"+y", opts)
