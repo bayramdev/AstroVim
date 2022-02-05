@@ -10,6 +10,12 @@ vim.g.mapleader = " "
 vim.g.maplocalleader = " "
 
 -- Normal --
+-- Clipboard
+map("n", "<leader>p", "\"+p", opts)
+map("n", "<leader>P", "\"+P", opts)
+map("n", "<leader>y", "\"+y", opts)
+map("n", "<leader>Y", "\"+Y", opts)
+
 -- Better window navigation
 map("n", "<C-h>", "<C-w>h", opts)
 map("n", "<C-j>", "<C-w>j", opts)
